@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="images/logoi.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header class="container-fluid bg-dark text-white">
+        <div class="row ">
+            <div class="col-md-11">
+                <h1 class="animate__animated animate__bounceInDown">Infotime</h1>
+                <p class="animate__animated animate__slideInRight"><em>Herramientas para tu negocio comercial</em></p>
+            </div>
+            <div class="col-md-1 container-fluid d-flex align-items-center d-flex justify-content-center p-0">
+            <img src="images/logoi.jpg" alt="Logo" width="60px" class="rounded">
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="container-fluid nav bg-success justify-content-center">
+            <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="simulador.html">Simulador</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="about.html">Acerca de Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="benefits.html">Beneficios</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <main class="container-fluid">
+        <section class="row">
+            <div style="padding-bottom: 50px; padding-top: 25px;"><h4>El sistema contable posee cuentas precargadas y podrá agregar nuevas. Las mismas deberán contar con 7 dígitos y no podrán ser números negativos o decimales. Asimismo, podrá agregar asientos y eliminarlos según el número que tengan asignado. Al final, verá el total de sus imputaciones.</h4></div>
+        </section>
+        <section class="row">
+            <div class="col-md-2">
+              <div>Ingrese la cuenta a añadir</div>
+              <form id="formcuenta">
+                <input type="number" placeholder = "Cuenta">
+                <button type="submit">Añadir cuenta</button>
+              </form>
+            </div>
+        <div class="col-md-3">
+              <form id="formasiento">
+                <input type="number" placeholder = "Cuenta">
+                <input type="text" placeholder = "Servicio">
+                <input type="number" placeholder = "Importe">
+                <button type="submit">Agregar asiento</button>
+              </form>
+              <form id="elimasiento">
+                <input type="number" placeholder = "N de asiento">
+                <button type="submit">Eliminar asiento</button>
+              </form>
+        </div>
+        <div class="col-md-2" id="cuentasdiv"><h4>Cuentas</h4></div>
+        <div class="col-md-5">
+            <button id="botonasientos">Mostrar asientos / Actualizar</button>
+            <div id="asientosdiv"></div>
+        </div>
+      </section>
+      <script src="js/eventos.js"></script>
+</body>
+
+</html>
